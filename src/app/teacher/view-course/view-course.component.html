@@ -1,0 +1,26 @@
+<div class="container">
+  <h3 *ngIf="course">Curso {{course.name}}</h3>
+  <div>
+
+  </div>
+  <h3>Recursos</h3>
+  <hr>
+  <div class="d-flex flex-wrap">
+    <div (click)="quiz()" matRipple class="ripple m-2">
+      <h5>Crear quiz</h5>
+      <img src="../../../assets/quiz.png" style="width: 100px; height: 100px;" alt="quiz">
+    </div>
+    <div matRipple class="ripple m-2">
+      <h6>Ver Alumnos</h6>
+      <img src="../../../assets/student.png" style="width: 100px; height: 100px;" alt="students">
+    </div>
+    <div matRipple class="ripple m-2">
+      <h6>Evaluar</h6>
+      <img src="../../../assets/evaluate.png" style="width: 100px; height: 100px;" alt="evaluate">
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <!-- <app-create-quiz></app-create-quiz> -->
+</div>

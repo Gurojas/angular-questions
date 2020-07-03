@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="d-flex align-items-center flex-wrap">
+    <div class="quiz-content m-2">
+      <h5>Contenido de la pregunta</h5>
+      <div class="d-flex">
+        <h5 class="m-2">{{index}}</h5>
+        <mat-form-field class="quiz-textarea">
+          <mat-label>Contenido de la pregunta</mat-label>
+          <textarea cdkTextareaAutosize matInput placeholder="Escriba el contenido de la pregunta"></textarea>
+        </mat-form-field>
+      </div>
+      <h5>Alternativas</h5>
+      <div class="d-flex flex-column">
+        <div class="d-flex">
+          <h6>a.</h6>
+          <mat-form-field class="quiz-alternative">
+            <mat-label>Contenido de la alternativa A</mat-label>
+            <input matInput placeholder="Escriba el contenido alternativa A">
+          </mat-form-field>
+        </div>
+        <div class="d-flex">
+          <h6>b.</h6>
+          <mat-form-field class="quiz-alternative">
+            <mat-label>Contenido de la alternativa B</mat-label>
+            <input matInput placeholder="Escriba el contenido alternativa B">
+          </mat-form-field>
+        </div>
+        <div class="d-flex">
+          <h6>c.</h6>
+          <mat-form-field class="quiz-alternative">
+            <mat-label>Contenido de la alternativa C</mat-label>
+            <input matInput placeholder="Escriba el contenido alternativa C">
+          </mat-form-field>
+        </div>
+        <div class="d-flex">
+          <h6>d.</h6>
+          <mat-form-field class="quiz-alternative">
+            <mat-label>Contenido de la alternativa D</mat-label>
+            <input matInput placeholder="Escriba el contenido alternativa D">
+          </mat-form-field>
+        </div>
+        <div class="d-flex">
+          <h6>e.</h6>
+          <mat-form-field class="quiz-alternative">
+            <mat-label>Contenido de la alternativa E</mat-label>
+            <input matInput placeholder="Escriba el contenido alternativa E">
+          </mat-form-field>
+        </div>
+      </div>
+      <h5>Respuesta correcta</h5>
+      <div class="d-flex">
+          <mat-checkbox class="mx-2">A</mat-checkbox>
+          <mat-checkbox class="mx-2">B</mat-checkbox>
+          <mat-checkbox class="mx-2">C</mat-checkbox>
+          <mat-checkbox class="mx-2">D</mat-checkbox>
+          <mat-checkbox class="mx-2">E</mat-checkbox>
+      </div>
+    </div>
+    <div>
+      <button (click)="deleteQuestion()" class="m-4" mat-raised-button color="warn"><mat-icon>delete</mat-icon> Eliminar</button>
+    </div>
+
+  </div>
+</div>

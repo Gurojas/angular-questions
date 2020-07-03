@@ -1,0 +1,37 @@
+<div class="mt-2 container">
+  <div class="banner-container">
+    <h3>Crear un nuevo curso</h3>
+  </div>
+  <form class="form-container" [formGroup]="courseForm">
+    <mat-form-field class="form-container__field" id="fieldName">
+      <mat-label>Nombre del curso</mat-label>
+      <input matInput placeholder="Ingrese su nombre" formControlName="nameControl">
+      <mat-icon color="#1a75ff" matPrefix>account_box</mat-icon>
+    </mat-form-field>
+    <mat-form-field class="form-container__field">
+      <mat-label>Descripción del curso</mat-label>
+      <textarea matInput placeholder="Ingrese descripción del curso" formControlName="descriptionControl">
+      </textarea>
+      <mat-icon color="#1a75ff" matPrefix>topic</mat-icon>
+    </mat-form-field>
+    <mat-form-field class="form-container__field">
+      <mat-label>Grado del curso</mat-label>
+      <mat-icon matPrefix>star_outline</mat-icon>
+      <mat-select (selectionChange)="gradeSelectionChange($event)">
+        <mat-option *ngFor="let grade of grades" [value]="grade.value">
+          {{grade.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="form-container__button">
+      <button routerLink="/home" mat-raised-button color="warn" id="btn-cancel">
+        <mat-icon class="icon">cancel</mat-icon>
+        Cancelar
+      </button>
+      <button (click)="onPressCompleted()" mat-raised-button color="primary" id="btn-complete">
+        <mat-icon class="icon">check</mat-icon>
+        Completar
+      </button>
+    </div>
+  </form>
+</div>

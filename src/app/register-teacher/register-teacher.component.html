@@ -1,0 +1,38 @@
+<form class="form-container" [formGroup]="profileForm">
+  <h3>Registro de nuevo usuario</h3>
+  <div class="form-container__userdata">
+    <mat-form-field class="form-container__field" id="fieldName">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Ingrese su nombre" formControlName="nameControl">
+      <mat-icon color="#1a75ff" matPrefix>account_box</mat-icon>
+    </mat-form-field>
+    <mat-form-field class="form-container__field" id="fieldLastName">
+      <mat-label>Apellido</mat-label>
+      <input matInput placeholder="Ingrese su apellido" formControlName="lastNameControl">
+      <mat-icon color="#1a75ff" matPrefix>account_box</mat-icon>
+    </mat-form-field>
+  </div>
+  <mat-form-field class="form-container__field">
+    <mat-label>Correo electronico</mat-label>
+    <input matInput type="email" placeholder="Ingrese su correo electronico" formControlName="emailControl">
+    <mat-icon color="#1a75ff" matPrefix>alternate_email</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="form-container__field">
+    <mat-label>Contraseña</mat-label>
+    <input matInput type="password" placeholder="Ingrese su contraseña" formControlName="passControl">
+    <mat-icon matPrefix>lock</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="form-container__field">
+    <mat-label>Repita contraseña</mat-label>
+    <input matInput type="password" placeholder="Ingrese nuevamente su contraseña" formControlName="rePassControl">
+    <mat-icon matPrefix>lock</mat-icon>
+  </mat-form-field>
+  <div class="error-pass" *ngIf="!isMatches">
+    Las contraseñas no coinciden
+  </div>
+  <div class="form-container__button">
+    <button mat-raised-button color="primary" (click)="onPress()">
+      <mat-icon class="icon">check</mat-icon>
+      Completar</button>
+  </div>
+</form>

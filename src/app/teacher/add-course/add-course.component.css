@@ -1,0 +1,25 @@
+.form-container {
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-container__field {
+  width: 100%;
+}
+
+.banner-container {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+}
+
+.form-container__button #btn-complete{
+  margin-left: 2px;
+}
+
+.form-container__button #btn-cancel{
+  margin-right: 2px;
+}
+
+

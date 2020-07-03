@@ -1,0 +1,14 @@
+.quiz-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+.quiz-textarea {
+  width: 100%;
+  /* max-width: 800px; */
+}
+
+.quiz-alternative {
+  width: 100%;
+  /* max-width: 800px; */
+}

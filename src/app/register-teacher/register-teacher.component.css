@@ -1,0 +1,44 @@
+.form-container{
+  padding: 10px;
+}
+
+.form-container__field{
+  width: 100%;
+}
+
+.form-container__userdata{
+  display: flex;
+}
+
+.form-container__button{
+  text-align: center;
+}
+
+.form-container__button button{
+  width: 60%;
+  border-radius: 20px;
+}
+
+#fieldName{
+  padding-right: 10px;
+}
+
+h3{
+  color: #1a75ff;
+}
+
+.icon{
+  padding-right: 10px;
+}
+
+.error-pass{
+  color: red;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container__userdata{
+    display: flex;
+    flex-direction: column;
+  }
+}

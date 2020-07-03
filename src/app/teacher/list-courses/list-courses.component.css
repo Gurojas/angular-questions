@@ -1,0 +1,21 @@
+.ripple{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.loading{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.loading span{
+  padding: 5px;
+  color: #3399ff;
+  font-size: 16px;
+}

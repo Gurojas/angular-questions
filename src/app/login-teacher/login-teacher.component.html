@@ -1,0 +1,21 @@
+
+<form class="main-container__form" [formGroup]="credentialForm">
+  <h2>Bienvenido al sistema</h2>
+  <div style="text-align: center;">
+    <img src="../../../assets/history.png">
+  </div>
+  <mat-form-field class="main-container__form-field">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" formControlName="emailControl" placeholder="Ingrese su correo electronico">
+    <mat-icon color="#1a75ff" matPrefix>alternate_email</mat-icon>
+  </mat-form-field>
+  <mat-form-field class="main-container__form-field">
+    <mat-label>Contraseña</mat-label>
+    <input matInput type="password" formControlName="passControl" placeholder="Ingrese su contraseña">
+    <mat-icon matPrefix>lock</mat-icon>
+  </mat-form-field>
+</form>
+
+<div class="main-container__form-button">
+  <button (click)="onPressLogin()" mat-raised-button color="primary"><mat-icon class="icon">login</mat-icon>Ingresar</button>
+</div>

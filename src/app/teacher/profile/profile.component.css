@@ -1,0 +1,14 @@
+.container-profile {
+  background-color: gray;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
+
+.profile-options{
+  display: flex;
+  flex-direction: column;
+}
+
